@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    height: 477px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png);
+}
+.header-menu{
+    background: rgb(240, 240, 240, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-list a{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.header-list a:hover{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 10px; /*底線跟字體間距*/
+}
+.header h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 130px;
+}
+.header p{
+    color: #00cc99;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.header-btnarea{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.header-btnarea input{
+    font-size: 30px;
+    width: 600px;
+    height: 50px;
+}
+.header-btnarea img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 750px;
+    top: 10px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner .banner-list{
+    margin-top: 10px;
+    width: 800px;
+}
+.banner-list-title{
+    margin: 20px 0px;
+}
+.banner-list h2{
+    color: #00cc99;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline;
+}
+.banner-list-title p{
+    display: inline;
+    padding-left: 20px;
+}
+.banner-list-title p,p{
+    color: #b2b2b2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.banner-list h3{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.banner-list ul li{
+    padding: 10px 0px;
+}
+.decimal{
+    padding-left: 100px;
+    list-style-type: decimal;
+}
+.decimal li{
+    color: #b2b2b2;
+    font-size: 20px;
+    font-weight: bold;
+}
+.disc{
+    padding-left: 100px;
+    list-style-type: disc;
+}
+.disc li{
+    color: #b2b2b2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.footer-form{
+    height: 500px;
+    background: #b2b2b2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer-form-title p{
+    color: black;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.footer-form-list{
+    margin: 0px 80px;
+}
+.footer-list-text{
+    display: flex;
+    flex-direction: column;
+}
+.footer-list-text input{
+    font-size: 20px;
+    font-size: 20px;
+    margin: 10px 0px;
+    width: 500px;
+    height: 40px;
+}
+.footer-list-text textarea{
+    width: 500px;
+    height: 150px;
+    color:#00cc99;
+    font-size: 20px;
+}
+
+.footer-submit{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer-submit input{
+    font-size: 20px;
+    padding: 15px 40px;
+    background: #00cc99;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer-submit input:hover{
+    font-weight: bold;
+    background: #323228;
+    color: red;
+}
+.footer-menu{
+    background: #323228;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    padding: 40px 0px 50px 40px;
+    position: relative
+}
+.footer-logo img{
+    display: block;
+}
+.footer-logo p{
+    font-weight: bold;
+    color: grey;
+    display: inline;
+    position: absolute;
+    left: 105px;
+    font-size: 15px;
+}
+.footer-list ul{
+    display: flex;
+    
+}
+.footer-list-fb{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/fb.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
+}
+.footer-list-twitter{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/tw.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 35px;
+    height:35px;
+    margin: 0px 10px;
+}
+.footer-list-ig{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/ig.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
+}
