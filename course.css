@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    height: 477px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png);
+    position: relative;
+}
+.header-menu{
+    background: rgb(240, 240, 240, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-list a{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.header-list a:hover{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 10px; /*底線跟字體間距*/
+}
+.header h1{
+    margin: 150px 0px 0px 50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+.header p{
+    margin-left: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00cc99;
+}
+.header-form{
+    margin: 50px 0px 0px 50px;
+}
+.header-form input{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    background: #00cc99;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header-form input:hover{
+    color: black;
+}
+.header-logo{
+    position:absolute;
+    left: 720px;
+    top: 120px;
+}
+.header-logo img{
+    margin-right: 10px;
+}
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-teacher{
+    width: 700px;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-teacher h2{
+    margin: 10px 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color:#00cc99;
+    line-height: 50px;
+}
+.content-teacher .color{
+    color: black;
+}
+.content-teacher li{
+    font-size: 20px;
+    padding: 5px;
+    color: grey;
+}
+.course-feature{
+    width: 600px;
+}
+.course-feature h3{
+    color:#00cc99;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline;
+}
+.course-feature p{
+    padding-left: 20px;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+}
+.course-feature ul{
+    margin-top: 20px;
+}
+.course-feature li{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.course-outline{
+    width: 600px;
+    margin: 30px 0px;
+}
+.course-outline-title{
+    margin-bottom: 20px;
+}
+.course-outline-title h4{
+    color: #00cc99;
+    font-size: 36px;
+    font-weight: bold;
+    display: inline;
+}
+.course-outline-title p{
+    padding-left: 10px;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+}
+.course-outline-list h5{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background: #ebebeb;
+    padding: 15px;
+    border-radius: 10px;
+}
+.course-outline-list li p{
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    color: grey;
+}
+.footer-sign{
+    height: 300px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-sign h6{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.footer-form{
+    margin-left: 30px;
+}
+.footer-form input{
+    font-size: 30px;
+    color: white;
+    background: #00cc99;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+.footer-form input:hover{
+    color: black;
+}
+.footer-menu{
+    background: #323228;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    padding: 40px 0px 50px 40px;
+    position: relative
+}
+.footer-logo img{
+    display: block;
+}
+.footer-logo p{
+    font-weight: bold;
+    color: grey;
+    display: inline;
+    position: absolute;
+    left: 105px;
+    font-size: 15px;
+}
+.footer-list ul{
+    display: flex;
+    
+}
+.footer-list-fb{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/fb.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
+}
+.footer-list-twitter{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/tw.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 35px;
+    height:35px;
+    margin: 0px 10px;
+}
+.footer-list-ig{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/ig.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
+}
