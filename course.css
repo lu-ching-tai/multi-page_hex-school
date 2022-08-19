@@ -67,6 +67,7 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 .header-list{
@@ -197,7 +198,11 @@ h3{
     font-weight: bold;
     display: inline;
 }
-.course-outline-list h5{
+
+
+
+
+.course-outline-list li:nth-child(odd){
     color: black;
     font-size: 25px;
     font-weight: bold;
@@ -205,7 +210,7 @@ h3{
     padding: 15px;
     border-radius: 10px;
 }
-.course-outline-list li p{
+.course-outline-list li:nth-child(even){
     display: block;
     padding: 15px;
     font-weight: bold;
