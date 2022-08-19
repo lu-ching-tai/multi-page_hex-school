@@ -126,6 +126,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .content-btnarea input{
@@ -151,11 +152,13 @@ p{
 .content-program .program-list{
     box-shadow: 0px 10px 10px gray;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-.content-program .program-list h2{
+.content-program .program-list img{
+    display:block; 
+    margin:auto;
+}
+.content-program .program-list h3{
+    text-align: center;
     font-size: 25px;
     font-weight: bold;
     padding: 10px;
@@ -167,11 +170,13 @@ p{
     color: grey;
 }
 h2{
+    display: block;
     font-size: 40px;
     font-weight: bold;
     color: #00cc99;
-    display: inline;
     padding: 10px;
+    text-align: center;
+    display: inline;
 }
 p{
     font-size: 20px;
@@ -220,11 +225,9 @@ p{
 .footer-form{
     margin-top: 50px;
 }
-.footer-form form{
-    display: flex;
-    flex-direction: column;
-}
+
 .footer-form-list input{
+    display: block;
     padding: 10px 100px 10px 10px;
     margin: 10px 0px;
     border-color: #ebebeb;
